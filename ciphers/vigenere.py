@@ -29,6 +29,3 @@ def decrypt(text, keyword):
             key_i += 1
         text1 += ch
     return text1
-
-print(encrypt("Hello World", "KEY"))
-print(decrypt(encrypt("Hello World", "KEY"), "KEY"))

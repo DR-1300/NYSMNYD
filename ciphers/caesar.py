@@ -21,7 +21,3 @@ def decrypt(text, shift):
                 ch = chr((ord(i) - ord('a') - shift) % 26 + ord('a'))
         text1 += ch
     return text1
-
-original = input("enter something: ")
-shift = int(input("shift: "))
-print("decrypted: " , decrypt(original, shift))
