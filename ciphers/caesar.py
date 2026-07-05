@@ -1,4 +1,4 @@
-def encrypt(text, shift):
+def encrypt_c(text, shift):
     text1 = ""
     for i in text:
         ch = i
@@ -10,7 +10,7 @@ def encrypt(text, shift):
         text1 += ch
     return text1
 
-def decrypt(text, shift):
+def decrypt_c(text, shift):
     text1 = ""
     for i in text:
         ch = i

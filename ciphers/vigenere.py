@@ -1,4 +1,4 @@
-def encrypt(text, keyword):
+def encrypt_v(text, keyword):
     text1 = ""
     key_i = 0
     keyword = keyword.upper()
@@ -14,7 +14,7 @@ def encrypt(text, keyword):
         text1 += ch
     return text1
 
-def decrypt(text, keyword):
+def decrypt_v(text, keyword):
     text1 = ""
     key_i = 0
     keyword = keyword.upper()
