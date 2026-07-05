@@ -5,19 +5,17 @@
  
 ---
  
-## Why the name?
- 
-The name is a play on the idea of encryption itself — you see your data clearly, then after encryption, it's gone. Unreadable. *Now you see me, now you don't.*
- 
-(Also loosely inspired by a Gordon Ramsay rage moment. Don't ask.)
- 
+## What does the name mean tho 😭
+
+The name origin is actually some weird corelation that i thought would work ( like you see something once, but after you encypt it, u cant see it because it has changed )
+
 ---
  
 ## How it works
  
 NYSMNYD supports three encryption methods, each progressively stronger than the last:
  
-### 🔡 Caesar Cipher
+### Caesar Cipher
 Julius Caesar used this for his personal correspondence. Each letter of the text is shifted to the right by some number to give it a different letter. 
  
 ```
@@ -31,7 +29,7 @@ Simple, but crackable via frequency analysis — the letter `E` just becomes ano
  
 ---
  
-### 🔑 Vigenère Cipher
+### Vigenère Cipher
 Vigenere is basically Caesar cipher but instead of one fixed shift, you use a keyword where each letter of the keyword gives a different shift. The keyword repeats to match the length of the text.
  
 ```
