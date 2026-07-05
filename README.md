@@ -1,4 +1,4 @@
-# NYSMNYD 🔐
+# NYSMNYD
 ### *Now You See Me, Now You Don't*
  
 > An encryption/decryption CLI tool built in Python — supporting Caesar, Vigenère, and AES encryption for both text and files.
@@ -25,7 +25,6 @@ Julius Caesar used this for his personal correspondence. Each letter of the text
 Mathematically:
 - Encrypt: `E(x) = (x + n) mod 26`
 - Decrypt: `D(x) = (x - n) mod 26`
-Simple, but crackable via frequency analysis — the letter `E` just becomes another letter, and patterns survive.
  
 ---
  
@@ -37,8 +36,6 @@ Vigenere is basically Caesar cipher but instead of one fixed shift, you use a ke
 K=10, E=4, Y=24, K=10, E=4
 ```
  
-Stronger than Caesar because frequency analysis no longer works directly — each letter can map to multiple encrypted letters.
- 
 ---
  
 ### AES (Advanced Encryption Standard)
@@ -49,7 +46,7 @@ Unlike Caesar and Vigenère, AES doesn't encrypt letter by letter. It converts y
 - Substituting values via a lookup table
 - Mixing columns mathematically
 - XORing with the key
-The result is **zero patterns** — changing one character in the input completely changes the entire output (the avalanche effect). Without the key, it's mathematically impossible to crack.
+The result is zero patterns - changing one character in the input completely changes the entire output (the avalanche effect). Without the key, it's mathematically impossible to crack.
  
 ---
  
@@ -76,7 +73,7 @@ python cli.py decrypt --method aes --file secret.txt.encrypted
 # creates secret.txt.encrypted.decrypted
 ```
  
-> **Note:** AES automatically saves the key to `secret.key` on encrypt and reads it back on decrypt. Keep this file safe — without it, decryption is impossible.
+> **Note:** AES automatically saves the key to `secret.key` on encrypt and reads it back on decrypt. Keep this file safe - without it, decryption is impossible.
  
 ---
  
