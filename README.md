@@ -1,7 +1,7 @@
 # NYSMNYD
 ### *Now You See Me, Now You Don't*
  
-> An encryption/decryption CLI tool built in Python — supporting Caesar, Vigenère, and AES encryption for both text and files.
+> An encryption/decryption CLI tool built in Python ; supporting Caesar, Vigenère, and AES encryption for both text and files.
  
 ---
  
@@ -39,7 +39,7 @@ K=10, E=4, Y=24, K=10, E=4
 ---
  
 ### AES (Advanced Encryption Standard)
-Selected by the US government (NIST) in 2001 after a 5-year global competition where cryptographers worldwide submitted algorithms and tried to break each other's. AES won. It's now the global standard — used in WhatsApp, HTTPS, and banking.
+Selected by the US government (NIST) in 2001 after a 5-year global competition where cryptographers worldwide submitted algorithms and tried to break each other's. AES won. It's now the global standard used in WhatsApp, HTTPS, and banking.
  
 Unlike Caesar and Vigenère, AES doesn't encrypt letter by letter. It converts your entire text to raw bytes, then runs them through 10+ rounds of:
 - Scrambling positions
